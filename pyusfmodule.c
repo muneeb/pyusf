@@ -118,5 +118,6 @@ initpyusf(void)
     PyModule_AddObject(m, "USF_EVENT_DANGLING", Py_BuildValue("i",USF_EVENT_DANGLING));
     PyModule_AddObject(m, "USF_EVENT_BURST", Py_BuildValue("i",USF_EVENT_BURST));
     PyModule_AddObject(m, "USF_EVENT_TRACE", Py_BuildValue("i",USF_EVENT_TRACE));
+    PyModule_AddIntConstant(m, "SMPTRACE_LEN", SMPTRACE_LEN);
 }
 

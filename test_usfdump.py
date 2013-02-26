@@ -56,7 +56,7 @@ def print_stride(stride):
                                                  1 << stride.line_size)
 def print_smptrace(smptrace):
     print "[SMPTRACE] pc1: %s" % (string_access(smptrace.begin))
-    a = numpy.ndarray( (32,),dtype= numpy.uint64, buffer=smptrace.ins_trace)
+    a = numpy.ndarray( (pyusf.SMPTRACE_LEN,),dtype= numpy.uint64, buffer=smptrace.ins_trace)
     print a
 #    a = np.fromiter(smptrace.ins_trace, dtype=np.float, count=DataLength.value)
    
